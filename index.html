@@ -7,5 +7,83 @@
     <script src="script.js" defer></script>
     <title>Tables</title>
   </head>
-  <body></body>
+  <body>
+    <!--
+    
+    ==============================
+    Tables
+    ==============================
+
+    1. Tables are used to display data
+    2. Tables are created using <table></table> tags
+    3. Rows, columns, headers, and cells can all be changed and filled with information
+
+    Example:
+
+    <table>
+        <tr>
+            <th>First Header</th>
+            <th>Second Header</th>
+        </tr>
+        <tr>
+            <td>This is a data cell</td>
+            <td>This is also a data cell!</td>
+        </tr>
+    </table>
+
+    Table syntax examples:
+
+    1. <tr> stands for table row, it holds everything for an entire row
+    2. <th> stands for table header, it defines the type of data in that row or column
+    3. <td> stands for table data, it creates a cell
+    4. colspan="" attribute defines how many columns the element should span
+    5. rowspan="" attribute defines how many rows the element should span
+    6. <caption> gives the table a caption and should be placed at the very top of the table tags
+    7. <colgroup> is used as a container for each column specification
+    8. <col> element is used to specify each group, span="" attribute hear is used to apply things to
+    9. <thead> element should be wrapped around column headings
+    10. <tbody> element should wrap all main table elements exluding header and footer
+    11. <tfoot> element should wrap the footer of the table such as a final row of totals
+    12. scope="" attribute is for defining the purpose of the headers for screenreaders
+    
+        -->
+    <table>
+      <caption>
+        This is a table
+      </caption>
+      <colgroup>
+        <col span="2" style="background-color: lightblue" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">1st head</th>
+          <th scope="col">2nd head</th>
+          <th scope="col">3rd head</th>
+          <th scope="col">4th head</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st cell</td>
+          <td>2nd cell</td>
+          <td>3rd cell</td>
+          <td>4th cell</td>
+        </tr>
+        <tr>
+          <td>1st cell</td>
+          <td>2nd cell</td>
+          <td>3rd cell</td>
+          <td>4th cell</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>1st cell</td>
+          <td>2nd cell</td>
+          <td>3rd cell</td>
+          <td>4th cell</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
 </html>
